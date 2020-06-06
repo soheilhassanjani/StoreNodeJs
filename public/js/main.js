@@ -38,3 +38,32 @@ function menuToggleClickHandler() {
 
 backdrop && backdrop.addEventListener("click", backdropClickHandler);
 menuToggle && menuToggle.addEventListener("click", menuToggleClickHandler);
+
+// swiper
+
+var mySwiper = new Swiper(".swiper-container", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
