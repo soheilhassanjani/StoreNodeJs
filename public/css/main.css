@@ -377,6 +377,9 @@ main {
   background-color: var(--color-light);
 }
 
-.cardA__actions form{
-  text-align: center;
+.cardA__actions{
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }

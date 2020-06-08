@@ -29,6 +29,12 @@
                         </a>
                     </li>
                     <li class="main-header__nav-item">
+                        <a class="main-header__nav-link <%= path === '/admin/add-category' ? 'active' : '' %>"
+                            href="/admin/add-category">
+                            افزودن دسته بندی
+                        </a>
+                    </li>
+                    <li class="main-header__nav-item">
                         <a class="main-header__nav-link <%= path === '/admin/products' ? 'active' : '' %>"
                             href="/admin/products">
                             محصولات مدیر
@@ -60,6 +66,12 @@
                         <a class="main-header__nav-cat-link <%= path === '/admin/add-product' ? 'active' : '' %>"
                             href="/admin/add-product">
                             افزودن محصول
+                        </a>
+                    </li>
+                    <li class="main-header__nav-cat-item">
+                        <a class="main-header__nav-cat-link <%= path === '/admin/add-category' ? 'active' : '' %>"
+                            href="/admin/add-category">
+                            افزودن دسته بندی
                         </a>
                     </li>
                     <li class="main-header__nav-cat-item">

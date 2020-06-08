@@ -1,9 +1,10 @@
 <%- include('../includes/head.ejs') %>
-    </head>
+</head>
 
-    <body>
-        <%- include('../includes/navigation.ejs') %>
-        <main class="centered">
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <div class="container py-4">
             <h1><%= product.title %></h1>
             <hr>
             <div>
@@ -12,5 +13,6 @@
             <h2><%= product.price %></h2>
             <p><%= product.description %></p>
             <%- include('../includes/add-to-cart.ejs') %>
-        </main>
-        <%- include('../includes/end.ejs') %>
+        </div>
+    </main>
+    <%- include('../includes/end.ejs') %>
