@@ -12,19 +12,19 @@
         <% } %>
         <form class="login-form" action="/signup" method="POST">
             <div class="form-control">
-                <label for="email">E-Mail</label>
+                <label for="email">ایمیل</label>
                 <input type="email" name="email" id="email">
             </div>
             <div class="form-control">
-                <label for="password">Password</label>
+                <label for="password">پسورد</label>
                 <input type="password" name="password" id="password">
             </div>
             <div class="form-control">
-                <label for="confirmPassword">Confirm Password</label>
+                <label for="confirmPassword">تایید پسورد</label>
                 <input type="password" name="confirmPassword" id="confirmPassword">
             </div>
             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-            <button class="btn" type="submit">Signup</button>
+            <button class="btn" type="submit">ثبت نام</button>
         </form>
     </main>
 <%- include('../includes/end.ejs') %>

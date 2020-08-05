@@ -1,13 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+@font-face {
+  font-family: "iranyekan";
+  src: url("../fonts/iranyekan/eot/iranyekanwebregular.eot");
+  src: url("../fonts/iranyekan/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/iranyekan/woff2/iranyekanwebregular.woff2") format("woff2"),
+    url("../fonts/iranyekan/woff/iranyekanwebregular.woff") format("woff"),
+    url("../fonts/iranyekan/ttf/iranyekanwebregular.ttf") format("truetype"),
+    url("../fonts/iranyekan/svg/iranyekanwebregular.svg#svgFontName") format("svg");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "iranyekan";
+  src: url("../fonts/iranyekan/eot/iranyekanwebbold.eot");
+  src: url("../fonts/iranyekan/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/iranyekan/woff2/iranyekanwebbold.woff2") format("woff2"),
+    url("../fonts/iranyekan/woff/iranyekanwebbold.woff") format("woff"),
+    url("../fonts/iranyekan/ttf/iranyekanwebbold.ttf") format("truetype"),
+    url("../fonts/iranyekan/svg/iranyekanwebbold.svg#svgFontName") format("svg");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "iranyekan";
+  src: url("../fonts/iranyekan/eot/iranyekanweblight.eot");
+  src: url("../fonts/iranyekan/eot/iranyekanweblight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/iranyekan/woff2/iranyekanweblight.woff2") format("woff2"),
+    url("../fonts/iranyekan/woff/iranyekanweblight.woff") format("woff"),
+    url("../fonts/iranyekan/ttf/iranyekanweblight.ttf") format("truetype"),
+    url("../fonts/iranyekan/svg/iranyekanweblight.svg#svgFontName") format("svg");
+  font-weight: lighter;
+}
+
 * {
   box-sizing: border-box;
+  font-family: "iranyekan", 'Open Sans', sans-serif;
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "iranyekan", 'Open Sans', sans-serif;
 }
 
 main {
@@ -46,6 +80,7 @@ form {
   display: none;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .main-header__item-list {
@@ -58,6 +93,7 @@ form {
 .main-header__item {
   margin: 0 1rem;
   padding: 0;
+  font-size: 14px;
 }
 
 .main-header__item a,
@@ -107,6 +143,7 @@ form {
 .mobile-nav__item {
   margin: 1rem;
   padding: 0;
+  font-size: 14px;
 }
 
 .mobile-nav__item a,
@@ -119,6 +156,8 @@ form {
   background: transparent;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .mobile-nav__item a:active,
@@ -129,6 +168,7 @@ form {
   background: #00695c;
   color: white;
   border-radius: 3px;
+  font-size: 16px;
 }
 
 #side-menu-toggle {

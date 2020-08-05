@@ -1,27 +1,27 @@
 <div class="backdrop"></div>
 <header class="main-header">
-    <button id="side-menu-toggle">Menu</button>
+    <button id="side-menu-toggle">منو</button>
     <nav class="main-header__nav">
         <ul class="main-header__item-list">
             <li class="main-header__item">
-                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+                <a class="<%= path === '/' ? 'active' : '' %>" href="/">فروشگاه</a>
             </li>
             <li class="main-header__item">
-                <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
+                <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">محصولات</a>
             </li>
             <% if (isAuthenticated) { %>
                 <li class="main-header__item">
-                    <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
+                    <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">سبد خرید</a>
                 </li>
                 <li class="main-header__item">
-                    <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
+                    <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">لیست نهایی</a>
                 </li>
                 <li class="main-header__item">
-                    <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
+                    <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">اضافه کردن محصول
                     </a>
                 </li>
                 <li class="main-header__item">
-                    <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
+                    <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">مدیریت محصول
                     </a>
                 </li>
             <% } %>
@@ -29,16 +29,16 @@
         <ul class="main-header__item-list">
             <% if (!isAuthenticated) { %>
                 <li class="main-header__item">
-                    <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">Login</a>
+                    <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">ورود</a>
                 </li>
                 <li class="main-header__item">
-                    <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">Signup</a>
+                    <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">ثبت نام</a>
                 </li>
             <% } else { %>
                 <li class="main-header__item">
                     <form action="/logout" method="post">
                         <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                        <button type="submit">Logout</button>
+                        <button type="submit">خروج</button>
                     </form>
                 </li>
             <% } %>
@@ -49,39 +49,39 @@
 <nav class="mobile-nav">
     <ul class="mobile-nav__item-list">
         <li class="mobile-nav__item">
-            <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+            <a class="<%= path === '/' ? 'active' : '' %>" href="/">فروشگاه</a>
         </li>
         <li class="mobile-nav__item">
-            <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
+            <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">محصولات</a>
         </li>
         <% if (isAuthenticated) { %>
             <li class="mobile-nav__item">
-                <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
+                <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">سبد خرید</a>
             </li>
             <li class="mobile-nav__item">
-                <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
+                <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">لیست نهایی</a>
             </li>
             <li class="mobile-nav__item">
-                <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
+                <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">اضافه کردن
                 </a>
             </li>
             <li class="mobile-nav__item">
-                <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
+                <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">مدیریت محصولات
                 </a>
             </li>
         <% } %>
         <% if (!isAuthenticated) { %>
             <li class="mobile-nav__item">
-                <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">Login</a>
+                <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">ورود</a>
             </li>
             <li class="mobile-nav__item">
-                <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">Signup</a>
+                <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">ثبت نام</a>
             </li>
         <% } else { %>
             <li class="mobile-nav__item">
                 <form action="/logout" method="post">
                     <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                    <button type="submit">Logout</button>
+                    <button type="submit">خروج</button>
                 </form>
             </li>
         <% } %>

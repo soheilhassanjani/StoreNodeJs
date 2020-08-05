@@ -12,15 +12,15 @@
         <% } %>
         <form class="login-form" action="/login" method="POST">
             <div class="form-control">
-                <label for="email">E-Mail</label>
+                <label for="email">ایمیل</label>
                 <input type="email" name="email" id="email">
             </div>
             <div class="form-control">
-                <label for="password">Password</label>
+                <label for="password">پسورد</label>
                 <input type="password" name="password" id="password">
             </div>
             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-            <button class="btn" type="submit">Login</button>
+            <button class="btn" type="submit">ورود</button>
         </form>
     </main>
 <%- include('../includes/end.ejs') %>
